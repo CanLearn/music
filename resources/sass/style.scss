@@ -1,0 +1,37 @@
+@font-face {
+    font-family: yekan;
+    src: url('font/yekan-font/Yekan.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: vazir;
+    src: url('font/vazir-font-v18.0.0/Vazir.woff') format('woff'),url("font/vazir-font-v18.0.0/Vazir.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: shabnam;
+    src: url('font/shabnam-font-v2.4.0/Shabnam.woff') format('woff'),url("font/shabnam-font-v2.4.0/Shabnam.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+    body {
+        font-family: vazir !important;
+    }
+    h1 , h2 , h3 ,h4 , h5 , h6 ,  .h1 ,  .h2 ,  .h3 , .h4 ,  .h5 ,  .h6, p , input , tr , td {
+        font-family: yekan;
+    }
+     tr , td  {
+        font-size: 15px;
+        font-weight: bold;
+    }
+     a , router-link , router-view {
+        font-size: 20px;
+        font-family: shabnam;
+    }
+
+
+

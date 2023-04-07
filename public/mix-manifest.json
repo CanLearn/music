@@ -1,0 +1,22 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/js/user.js": "/js/js/user.js",
+    "/js/js/user_create.js": "/js/js/user_create.js",
+    "/js/js/user_edit.js": "/js/js/user_edit.js",
+    "/js/js/chart.js": "/js/js/chart.js",
+    "/js/js/dashboard.js": "/js/js/dashboard.js",
+    "/js/js/category.js": "/js/js/category.js",
+    "/js/js/category_create.js": "/js/js/category_create.js",
+    "/js/js/category_edit.js": "/js/js/category_edit.js",
+    "/js/js/file.js": "/js/js/file.js",
+    "/js/js/file_create.js": "/js/js/file_create.js",
+    "/js/js/file_edit.js": "/js/js/file_edit.js",
+    "/js/js/auth-routes.js": "/js/js/auth-routes.js",
+    "/js/js/landing_page.js": "/js/js/landing_page.js",
+    "/js/js/not_found.js": "/js/js/not_found.js",
+    "/js/js/role.js": "/js/js/role.js",
+    "/js/js/membership.js": "/js/js/membership.js",
+    "/js/js/membership_create.js": "/js/js/membership_create.js",
+    "/js/js/membership_edit.js": "/js/js/membership_edit.js",
+    "/css/app.css": "/css/app.css"
+}

@@ -1,0 +1,67 @@
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+import {
+    faDashboard,
+    faHome,
+    faGear,
+    faQuestion,
+    faRightFromBracket,
+    faUsers,
+    faUser,
+    faPlus,
+    faQuestionCircle,
+    faComments,
+    faReplyAll,
+    faTags,
+    faList,
+    faEdit,
+    faMapLocationDot,
+    faClose,
+    faLineChart,
+    faReorder,
+    faCircle,
+    faMoon,
+    faStar,
+    faBars,
+    faSnowflake,
+    faShoppingCart,
+} from "@fortawesome/free-solid-svg-icons";
+
+//brand icon
+import {
+    faYoutube,
+    faInstagram,
+    faTelegram,
+    faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+/* add icons to the library */
+library.add(
+    faDashboard,
+    faHome,
+    faUsers,
+    faClose,
+    faUser,
+    faGear,
+    faQuestion,
+    faRightFromBracket,
+    faPlus,
+    faMapLocationDot,
+    faQuestionCircle,
+    faComments,
+    faReplyAll,
+    faTags,
+    faList,
+    faEdit,
+    faYoutube,
+    faInstagram,
+    faTelegram,
+    faWhatsapp,
+    faLineChart,
+    faReorder,
+    faCircle,
+    faMoon,
+    faStar,
+    faBars,
+    faSnowflake,
+    faShoppingCart
+);
