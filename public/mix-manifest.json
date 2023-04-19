@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/js/home.js": "/js/js/home.js",
     "/js/js/user.js": "/js/js/user.js",
     "/js/js/user_create.js": "/js/js/user_create.js",
     "/js/js/user_edit.js": "/js/js/user_edit.js",
@@ -11,12 +12,20 @@
     "/js/js/file.js": "/js/js/file.js",
     "/js/js/file_create.js": "/js/js/file_create.js",
     "/js/js/file_edit.js": "/js/js/file_edit.js",
-    "/js/js/auth-routes.js": "/js/js/auth-routes.js",
     "/js/js/landing_page.js": "/js/js/landing_page.js",
     "/js/js/not_found.js": "/js/js/not_found.js",
     "/js/js/role.js": "/js/js/role.js",
     "/js/js/membership.js": "/js/js/membership.js",
     "/js/js/membership_create.js": "/js/js/membership_create.js",
     "/js/js/membership_edit.js": "/js/js/membership_edit.js",
+    "/js/js/biographi.js": "/js/js/biographi.js",
+    "/js/js/biographi_edit.js": "/js/js/biographi_edit.js",
+    "/js/js/biographi_create.js": "/js/js/biographi_create.js",
+    "/js/js/nofification.js": "/js/js/nofification.js",
+    "/js/js/login.js": "/js/js/login.js",
+    "/js/js/register.js": "/js/js/register.js",
+    "/js/js/discount.js": "/js/js/discount.js",
+    "/js/js/discount_create.js": "/js/js/discount_create.js",
+    "/js/js/discount_edit.js": "/js/js/discount_edit.js",
     "/css/app.css": "/css/app.css"
 }

@@ -69,8 +69,7 @@ export default {
         storeCategory () {
             axios.post('http://127.0.0.1:8000/api/category/' , this.categorys)
                 .then(({ data }) => {
-                    console.log(data)
-                    this.$router.push({ name: 'category' });
+                     this.$router.push({ name: 'category' });
                     swal.message();
                 })
         }

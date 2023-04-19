@@ -55,7 +55,7 @@
                                                     {{ user.email }}
                                                 </td>
                                                 <td>
-                                                    {{ user.created_at }}
+                                                    {{ moment(user.created_at).format('jYYYY/jM/jD') }}
                                                 </td>
 
                                                 <td class="td-actions text-right">
@@ -90,7 +90,7 @@
 import SliderBar from "../../../components/Panel/sliderBar.vue";
 import NavBar from "../../../components/Panel/NavBar.vue";
 import {  Bootstrap5Pagination } from 'laravel-vue-pagination';
-
+import moment from 'moment-jalaali';
 export default {
     name: "App",
 
@@ -98,7 +98,7 @@ export default {
     data() {
         return {
             users: [],
-
+            moment : moment
         }
 
     },
@@ -120,6 +120,7 @@ export default {
                     if (result.value) {
                         axios.delete(`http://127.0.0.1:8000/api/users/${id}`)
                             .then( data => {
+                                this.getUsers();
                                 this.$router.splice(index , 1 );
                             })
                     }

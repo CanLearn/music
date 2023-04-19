@@ -164,6 +164,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class ,
 
         /*
          * Package Service Providers...
@@ -239,6 +240,8 @@ return [
         'JsonLd'  => Artesaos\SEOTools\Facades\JsonLd::class,
         'JsonLdMulti' => Artesaos\SEOTools\Facades\JsonLdMulti::class,
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+
     ],
 
 ];

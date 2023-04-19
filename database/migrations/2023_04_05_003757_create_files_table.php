@@ -28,6 +28,7 @@ class CreateFilesTable extends Migration
             $table->string('slug');
             $table->longText('caption');
             $table->string('tags');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

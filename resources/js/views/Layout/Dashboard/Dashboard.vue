@@ -22,8 +22,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="material-icons text-danger">warning</i>
-                                        <a href="#pablo">Get More Space...</a>
+                                        <a href=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -89,8 +88,7 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="stats">
-                                        <i class="material-icons text-danger">warning</i>
-                                        <a href="#pablo">Get More Space...</a>
+                                        <a href=""></a>
                                     </div>
                                 </div>
                             </div>

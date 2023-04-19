@@ -23,7 +23,7 @@
                     </router-link>
                 </li>
                 <li class="nav-item ">
-                    <router-link :to="{ name : 'files' }" class="nav-link" href="./icons.html">
+                    <router-link :to="{ name : 'files' }" class="nav-link" >
                         <i class="fa fa-file"></i>
                         <p>فایل</p>
                     </router-link>
@@ -47,16 +47,16 @@
                     </router-link>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./rtl.html">
+                    <router-link class="nav-link" :to="{ name : 'biographi'  } ">
                         <i class="	fa fa-angellist"></i>
-                        <p>لیست</p>
-                    </a>
+                        <p> بیوگرافی </p>
+                    </router-link>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="./tables.html">
-                        <i class="fa fa-table"></i>
-                        <p>لیست ها </p>
-                    </a>
+                    <router-link :to="{ name : 'discount' }"   class="nav-link" >
+                        <i class="fa fa-bomb"></i>
+                        <p>تخفیف </p>
+                    </router-link>
                 </li>
             </ul>
         </div>

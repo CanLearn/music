@@ -33,7 +33,9 @@
                                                 <th>
                                                     نقش
                                                 </th>
-
+                                                <th>
+                                                    تاریخ
+                                                </th>
                                             </tr>
                                             </thead>
 
@@ -51,7 +53,10 @@
                                                 <td>
                                                     {{ user.role }}
                                                 </td>
+                                                <td>
+                                                    {{ moment(user.created_at).format('jYYYY/jM/jD') }}
 
+                                                </td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -71,11 +76,13 @@
 <script>
 import SliderBar from "../../components/Panel/sliderBar.vue";
 import NavBar from "../../components/Panel/NavBar.vue";
+import moment from "moment-jalaali";
 export default {
     name: "App",
     components: {SliderBar  , NavBar} ,
     data() {
         return {
+            moment : moment,
             users :  [] ,
         }
     },

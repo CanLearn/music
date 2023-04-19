@@ -11,14 +11,13 @@
     <script>
         window.csrf = '{{ csrf_token() }}'
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 <body>
 <div id="app">
     <router-view />
 </div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+<script src="//cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>

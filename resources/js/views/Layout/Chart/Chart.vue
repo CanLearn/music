@@ -14,6 +14,10 @@
                         <br>
                         <ChartMusic>
                         </ChartMusic>
+                        <br>
+                        <br>
+                        <ChartCountMusic>
+                        </ChartCountMusic>
                     </div>
                 </div>
             </div>
@@ -26,10 +30,11 @@ import SliderBar from "../../../components/Panel/sliderBar.vue";
 import NavBar from "../../../components/Panel/NavBar.vue";
 import ChartUser from "../../../components/Panel/Chart/ChartUser.vue";
 import ChartMusic from "../../../components/Panel/Chart/ChartMusic.vue";
+import ChartCountMusic from "../../../components/Panel/Chart/ChartCountMusic.vue";
 
 export default {
     name: "App",
-    components: {SliderBar  , NavBar , ChartUser  , ChartMusic},
+    components: {SliderBar  , NavBar , ChartUser  , ChartMusic , ChartCountMusic},
     data() {
         return {
             user : [],

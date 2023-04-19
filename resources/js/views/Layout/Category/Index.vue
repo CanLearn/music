@@ -23,7 +23,12 @@
                                     <!--                                    <p class="card-category ">Complete your profile</p>-->
                                 </div>
                                 <div class="card-body">
-
+                                    <div class="col-md-10 d-flex justify-content-around">
+                                        <form @submit.prevent="search" >
+                                            <input  type="text"  class="pl-2" v-model="INsearch" name="search">
+                                            <button class="search_button"> <i class="fa fa-search"></i> </button>
+                                        </form>
+                                    </div>
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class=" text-primary">
@@ -58,7 +63,7 @@
                                                     {{ category.slug }}
                                                 </td>
                                                 <td>
-                                                    {{ category.created_at }}
+                                                    {{ moment(category.created_at).format('jYYYY/jM/jD') }}
                                                 </td>
                                                 <td class="td-actions text-right">
                                                     <router-link
@@ -91,34 +96,45 @@
 import SliderBar from "../../../components/Panel/sliderBar.vue";
 import NavBar from "../../../components/Panel/NavBar.vue";
 import axios from "axios";
+import moment from "moment-jalaali";
 
 export default {
     name: "App",
     components: {SliderBar, NavBar} ,
     data() {
         return {
-            categorys : []
+            categorys : [] ,
+            moment : moment ,
+            INsearch : []
         }
     },
    created() {
-       indexCategory : {
-           axios.get('http://127.0.0.1:8000/api/category' )
-               .then(({ data }) => {
-                   this.categorys = data
-               })
-       }
+      this.getCategory() ;
    } ,
 
     methods: {
+        getCategory (){
+            axios.get('http://127.0.0.1:8000/api/category' )
+                .then(({ data }) => {
+                    this.categorys = data
+                })
+        },
         categoryDelete ( id , index ) {
            swal.confirm().then((result) => {
                if(result.value) {
                    axios.delete(`http://127.0.0.1:8000/api/category/${id}`)
                        .then(({data}) => {
-                           this.$router.splice(index , 1)
+                           this.getCategory();
                        })
                }
            })
+        } ,
+        search()
+        {
+            axios.post('http://127.0.0.1:8000/api/category')
+            .then((data) => {
+               console.log(data.data)
+        })
         }
     },
 
@@ -126,5 +142,12 @@ export default {
 }
 </script>
 <style scoped>
-
+search_button{
+    background-color: #23272b;
+    padding : 0 ;
+    margin: 0;
+    width: 10px;
+    height : 11px;
+    border-radius: 12px;
+}
 </style>

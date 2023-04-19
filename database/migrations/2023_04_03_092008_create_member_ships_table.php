@@ -20,6 +20,7 @@ class CreateMemberShipsTable extends Migration
             $table->integer('price')->unsigned();
             $table->integer('priority')->unsigned();
             $table->boolean('is_yearly')->default(false);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

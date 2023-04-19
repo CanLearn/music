@@ -46,6 +46,9 @@
                                                 <th>
                                                     عملیات
                                                 </th>
+                                                <th>
+                                                    تاریخ
+                                                </th>
                                             </tr>
                                             </thead>
 
@@ -68,6 +71,10 @@
                                                 </td>
                                                 <td>
                                                     {{ member.type }}
+                                                </td>
+                                                <td>
+                                                    {{ moment(member.created_at).format('jYYYY/jM/jD') }}
+
                                                 </td>
                                                 <td class="td-actions text-right">
                                                     <router-link
@@ -101,6 +108,7 @@
 import SliderBar from "../../../components/Panel/sliderBar.vue";
 import NavBar from "../../../components/Panel/NavBar.vue";
 import {Bootstrap5Pagination} from 'laravel-vue-pagination';
+import moment from "moment-jalaali";
 
 export default {
     name: "App",
@@ -108,6 +116,7 @@ export default {
     data() {
         return {
             menubars: [],
+            moment : moment
 
         }
     },
