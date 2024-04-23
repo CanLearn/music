@@ -10,6 +10,7 @@ class DownloadController extends Controller
 {
     public function index_320(File $file)
     {
+
         Storage::download($file->file_320);
     }
 }
